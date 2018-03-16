@@ -17,7 +17,7 @@ describe 'Static pages' do
   end
 
   it 'has a paragraph tag with a cutesy coding quote' do
-    visit root_path
+    visit static_quote_path
     expect(page).to have_selector('p', text: 'If builders built buildings the way programmers wrote programs, then the first woodpecker that came along wound destroy civilization. - Gerald Weinberg')
   end
 end
